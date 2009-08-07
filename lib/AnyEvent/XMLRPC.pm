@@ -13,17 +13,19 @@ use Frontier::RPC2;
 
 use base qw(AnyEvent::HTTPD);
 
+=encoding utf8
+
 =head1 NAME
 
 AnyEvent::XMLRPC - Non-Blocking XMLRPC Server. Originally a AnyEvent implementation of Frontier.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
@@ -46,6 +48,7 @@ or
 	);
 
 and
+
 	sub echo {
 		@rep = qw(bala bababa);
 		return \@rep;
